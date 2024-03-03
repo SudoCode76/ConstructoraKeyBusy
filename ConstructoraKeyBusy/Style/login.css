@@ -1,0 +1,149 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url('../images/waves dark alt 2560x2560 (custom).jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.logo {
+    width: 150px; /* Cambia esto al ancho deseado */
+    height: auto; /* Esto mantendrá la proporción de la imagen */
+    
+}
+.logoTitle {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+section {
+    position: relative;
+    max-width: 400px;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(55px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 3rem;
+}
+
+.forget {
+    margin: 35px 0;
+    font-size: 0.85rem;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+h1 {
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+}
+
+
+button {
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background-color: rgb(255, 255,255, 1);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.4s ease;
+}
+button:hover {
+   background-color: rgb(255, 255,255, 0.5);
+}
+.register{
+    color: white;
+}
+.register a {
+    color: white;
+}
+
+/* imputs */
+.input-group {
+    margin-bottom: 20px;
+    background: rgba(255, 255, 255, 0.2); /* Fondo ligeramente transparente */
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.input-group-text {
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    padding: 10px;
+    color: #fff; /* Color del ícono */
+}
+
+.input-group .form-control {
+    background: none;
+    border: none;
+    outline: none;
+    color: white; /* Color del texto */
+    padding: 10px;
+}
+
+    .input-group .form-control::placeholder {
+        color: #ccc; /* Color del placeholder */
+    }
+
+.input-group .input_user, .input-group .input_pass {
+    flex: 1;
+}
+
+/* Ajustes adicionales para mejorar la coherencia con el diseño */
+.input-group .form-control:focus {
+    box-shadow: none;
+}
+
+/* Mejorar la visualización del ícono */
+.input-group-text i {
+    font-size: 1.2rem;
+}
+
+/*alert*/
+.alert {
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 15px;
+    color: #fff; /* Color del texto */
+    background-color: rgba(255, 0, 0, 0.6); /* Fondo rojo semitransparente */
+    border: 1px solid rgba(255, 0, 0, 0.8); /* Borde más oscuro para definir */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    backdrop-filter: blur(8px); /* Suaviza el fondo, solo visible en fondos semi-transparentes */
+}
+
+    .alert i {
+        margin-right: 15px; /* Espacio entre icono y texto, ajusta según necesites */
+    }
+
+    /* Opcional: si quieres añadir un botón de cerrar la alerta */
+    .alert button {
+        background: none;
+        border: none;
+        color: #fff; /* Color del botón de cerrar */
+        font-size: 1.2rem;
+        cursor: pointer;
+    }
+
+        .alert button:hover {
+            color: #ffdddd; /* Color al pasar el mouse */
+        }
+
